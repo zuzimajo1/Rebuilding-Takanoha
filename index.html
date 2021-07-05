@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuilding Takanoha Ab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+     crossorigin="anonymous">
+     <link rel="icon" href="images/favicon2.icon">
+</head>
+<body class="font-sans relative">
+    <header class="w-full flex dark:bg-gray-900 dark:bg-opacity-70 dark:text-white fixed top-0 bg-white bg-opacity-70  z-50">
+        <nav class="w-full h-20 flex justify-between items-center px-3 sm:px-4 md:px-4 lg:px-12 py-4">
+            <div class="flex">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/53_Canadian_Maple_Leaf_logo_logos-256.png" alt="logo" class="w-10 h-10 ">
+                <div class="hidden md:flex">
+                <a href="#companyid" ><p class="px-5 ml-5 py-2 font-semibold">Company</p></a>
+                <a href="#teamid"><p class="px-5 py-2 font-semibold">Team</p></a>
+                <a href="#contact"><p class="px-5 py-2 font-semibold">Engineering Blog</p></a>
+                </div>
+            </div>
+            <div class="hidden md:hidden absolute top-7 inset-x-2 z-50 transition duration-500 ease-in-out" id="smalltoggle">
+                <div class="w-full h-72 rounded-lg bg-white">
+                    <div class="">
+                        <div class="flex justify-between items-center p-4">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/53_Canadian_Maple_Leaf_logo_logos-256.png" alt="logo" class="w-10 h-10 ">
+                            <span class=""><i class="fas fa-times text-xl text-gray-400 py-2 px-2 rounded focus:bg-gray-300" id="smallclose"></i></span>
+                        </div>
+                        <div class="text-gray-700 px-5">
+                            <a href="#companyid"  id="listcompany"><p class="py-2 font-semibold">Company</p></a>
+                            <a href="#teamid" id="listteam"><p class="py-2 font-semibold">Team</p></a>
+                            <a href="#"><p class="py-2 font-semibold">Engineering Blog</p></a>
+                            <a href="#contact2" id="listcontact"><p class="py-2 font-semibold">Contact</p></a>
+                        </div>
+                        <div class="flex justify-center items-center py-2 mt-4 bg-gray-100 rounded-b-lg">
+                            <div class="flex">
+                                <span class="px-4"><i class="fas fa-sun text-xl dark:text-gray-300"></i></span>
+                                <div class="">
+                                <input type="checkbox" name="toggle" id="toggle2" class="hidden" checked>
+                                <label for="toggle2" class="cursor-pointer">
+                                    <div class="w-11 h-6 rounded-full bg-gray-200  flex items-center" id="togglecontainer">
+                                        <div class="w-5 h-5 rounded-full bg-white m-sm transform transition duration-300 e" id="togglecircle">
+                                        </div>
+                                    </div>
+                                </label>
+                                </div>
+                                <span class="px-4"><i class="fas fa-moon text-xl transform -rotate-12 dark:text-gray-300"></i></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" md:hidden" id="smallmenu">
+                <span class=""><i class="fas fa-bars font-light text-xl text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-gray-800 py-3 px-3 rounded-lg text-center"></i></span>
+            </div>
+            <div class=" pt-2 hidden md:flex ">
+                <div class="flex">
+                <span class="px-4"><i class="fas fa-sun text-xl dark:text-gray-300"></i></span>
+                <div class="">
+                <input type="checkbox" name="toggle" id="toggle" class="hidden" checked>
+                <label for="toggle" class="cursor-pointer">
+                    <div class="w-11 h-6 rounded-full bg-gray-200  flex items-center" id="togglecontainer">
+                        <div class="w-5 h-5 rounded-full bg-white m-sm transform transition duration-300 e" id="togglecircle">
+                        </div>
+                    </div>
+                </label>
+                </div>
+                <span class="px-4"><i class="fas fa-moon text-xl transform -rotate-12 dark:text-gray-300"></i></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article class=" dark:bg-gray-900">
+        <section class=" lg:flex lg:justify-center pt-24 sm:pt-32 md:text-center">
+            <div class="sm:text-center text-left px-4 sm:px-0 lg:w-1/2 lg:pl-14 md:text-center lg:text-left lg:mt-6">
+                <h1 class="text-4xl font-extrabold tracking-tighter dark:text-white">Takanoha Ab</h1>
+                <h3 class="text-2xl w-full font-extrabold tracking-tighter text-red-700 dark:text-red-400">Solves complex problems.</h3>
+                <p class="mt-5 text-base sm:text-xl sm:w-full md:w-full text-gray-600 dark:text-gray-300 sm:px-6 md:px-16 lg:px-0 lg:pr-8">Takanoha Ab is a consulting and software development firm. 
+                    We are based in Åland, Finland but we are open to working with 
+                    clients from all over the world.
+                </p> 
+                <p class="mt-5 text-base  sm:w-full sm:text-xl md:w-full text-gray-600 dark:text-gray-300 sm:px-6 md:px-20 lg:px-0 lg:pr-8">We are focused on delivering great software and working closely with our
+                    clients to ensure what we deliver is up to the task. Agile methodologies are our
+                    preferred way of working for quick feedback loops.
+                </p>
+                <div class="mt-10 pb-16 sm:pb-20 md:pb-12 lg:pb-0">
+                    <p class="uppercase text-sm font-semibold dark:text-white text-left sm:text-center md:text-center lg:text-left">technologies</p>
+                    <div class="flex flex-wrap mt-4 justify-between sm:justify-center  md:justify-center lg:justify-start">
+                        <div><abbr title="Java"><i class="fab fa-java text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-2"></i></abbr></div>
+                        <div><abbr title="Vue.js"><i class="fab fa-vuejs text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-14"></i></abbr></div>
+                        <div><abbr title="Node.js"><i class="fab fa-node-js text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-14"></i></abbr></div>
+                        <div><abbr title="Amazon Web Services"><i class="fab fa-aws text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-14"></i></abbr></div>
+                        <div><abbr title="React"><i class="fab fa-react text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-14"></i></abbr></div>
+                        <div><abbr title="PHP Laravel"><i class="fab fa-laravel text-4.5 text-gray-500 font-bold dark:text-gray-400 ml-14"></i></abbr></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 lg:text-left hidden md:flex" id="contact">
+                <div class="w-full flex justify-center">
+                    <div class="w-container sm:mt-14 pb-8 lg:-mt-2 ml-6 rounded-lg bg-gray-100 dark:bg-white">
+                    <div class="w-full px-10 pt-8">
+                        <h1 class="text-4xl font-extrabold">Let's work together</h1>
+                        <p class="mt-3 pr-12 text-lg text-gray-700">We'd love to hear from you! Send us a message and
+                            we'll get right back to you.
+                        </p>
+                        <div class="w-full h-16 border-red-300 flex items-center">
+                            <!-- <div class="w-full border-customizeborder border-gray-300"></div> -->
+                                <hr class="w-full">
+                                <div><i class="fas fa-envelope text-gray-500 px-3"></i></div>
+                                <hr class="w-full">
+                            <!-- <div class="w-full border border-gray-300"></div> -->
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="">
+                                <p class="text-sm font-medium text-gray-700">First name</p>
+                                <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-inputwidth border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                            </div>
+                            <div class="">
+                                <p class="text-sm font-medium text-gray-700">Last name</p>
+                                <input type="text" class=" mt-1 px-3 py-2 h-9 rounded w-inputwidth border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                            </div>
+                        </div>
+                        <p class="mt-2 text-sm font-medium text-gray-700">Email</p>
+                        <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                        <p class="mt-2 text-sm font-medium text-gray-700">Company</p>
+                        <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium text-gray-700">Phone</p>
+                            <p class="text-sm font-normal text-gray-600">Optional</p>
+                        </div>
+                        <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none" >
+                        <div class="flex justify-between mt-2">
+                            <p class="text-sm font-medium text-gray-700">How can we help you?</p>
+                            <p class="text-sm font-normal text-gray-600">Max. 2000 characters</p>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" class="mt-1 px-3 py-2 w-full h-24 border rounded border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                        </textarea>
+                        <div class="flex justify-end">
+                        <button class="mt-1 px-9 py-3 rounded-lg bg-red-700 text-white text-sm font-medium focus:outline-none">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:flex pb-8 pt-16" id="companyid">
+            <div class="lg:w-1/2 px-4 sm:px-5 md:pl-6 lg:pl-16 lg:py-16 md:pt-16 md:py-0 dark:text-white">
+                <div>
+                    <h1 class="font-extrabold text-3xl uppercase">the company</h1>
+                    <p class="mt-5 pr-4 sm:pr-0 text-lg text-gray-700 dark:text-gray-300 lg:pr-4 md:pr-2">Takanoha Ab was founded in May 2020 in Mariehamn, Åland Islands. We
+                        are specialised in web application development. We work together with
+                        our clients to create efficient, maintainable solutions to business problems.
+                    </p>
+                </div>
+                <div class="sm:flex mt-12">
+                    <div class="pb-12 sm:pb-0 sm:w-1/2">
+                        <h2 class="font-bold text-2xl">Frontend Development</h2>
+                        <p class="mt-2 lg:pr-5 text-gray-700 dark:text-gray-300 md:pr-2"><span class="dark:text-white font-semibold text-black">Entensive</span> experience in building responsive frontends using Vue.js and
+                        React. Usability is something that we always try to keep in mind for our clients so the user
+                    experience is intuitive and inclusive.</p>
+                    </div>
+                    <div class="sm:w-1/2 lg:ml-4">
+                        <h2 class="font-bold text-2xl w-full">Backend Development</h2>
+                        <p class="mt-2 lg:pr-6 dark:text-gray-300 text-gray-700 md:pr-4"><span class="dark:text-white font-semibold text-black">Performant APis</span> is something we excell at. We like to work with Spring for Java,
+                        Express for Node or PHP Laravel.</p>
+                        <p class="mt-2 lg:pr-6 dark:text-gray-300 text-gray-700 md:pr-4">Documentation is important, so we ensure the APIs are well-documented using the OpenAPI specification.</p>
+                        <p class="mt-2 lg:pr-6 dark:text-gray-300 text-gray-700 md:pr-4">Apart from Restful APIs we are also interested in working with GraphQL.</p>
+                    </div>
+                </div>
+                <div class="relative sm:flex mt-12 ">
+                    <div class="w-full  pb-12 sm:pb-0 sm:w-1/2 z-30">
+                        <h2 class="font-bold text-2xl">Cloud</h2>
+                        <p class="mt-2 dark:text-gray-300 lg:pr-4 text-gray-700 md:pr-8"><span class="dark:text-white font-semibold text-black">Serverless</span> amd AWS Cloud Formation in particular is really interesting to us. </p>
+                        <p class="dark:text-gray-300 pr-6 text-gray-700">Templates describing infrastructure can be version controlled in the same way as code. A powerful way of quickly
+                     provisioning new instances of your infrastructure.</p>
+                     <p class="mt-2 dark:text-gray-300 text-gray-700 ">Let us do what we are good at, building great software, and stop worrying about infrastructure.</p>
+                    </div>
+                    <div class=" w-full sm:w-1/2 z-30 lg:ml-4">
+                        <h2 class="font-bold text-2xl pr-12 md:pb-3 lg:pb-0">Test-Driven Development</h2>
+                        <p class="lg:mt-2 lg:pr-6 mt-2 dark:text-gray-300 text-gray-700 md:pr-4 "><span class="dark:text-white font-semibold text-black">Testing</span> is extremely important to us and not something we want to compromise on. 
+                        We have a pragmatic approach to creating a rigorous set of tests that can grow with the application</p>
+                        <p class="dark:text-gray-300  lg:pr-12 text-gray-700  ">and ensures stability and maintability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden sm:block w-full lg:w-1/2">
+                <div class="relative">
+                    <div class="z-10 hidden"  id="lightimage">
+                        <!-- <img src="images/image2.jpg" alt="imagedesign" class="w-full h-semiheight bg-cover mt-8 rounded"> -->
+                        <div class="bg-hero2-pattern z-10 w-full md:h-80 md:-mt-20 lg:-m-0 lg:h-semiheight bg-cover lg:mt-8 rounded"></div>
+                        <div class="absolute inset-0 lg:bg-gradient-to-r bg-gradient-to-b from-gray-200"></div>
+                        <div class="absolute inset-0 lg:bg-gradient-to-l bg-gradient-to-t from-gray-200"></div>
+                    </div>
+                    <div class="z-10 block" id="darkimage">
+                    <!-- <img src="images/image1.jpg" alt="imagedesign" class="w-full h-semiheight bg-cover mt-8 rounded"> -->
+                    <div class="bg-hero-pattern z-10 w-full h-72 -mt-20 md:h-80 md:-mt-20 lg:-m-0 lg:h-semiheight bg-cover lg:mt-8 rounded"></div>
+                    <div class="absolute inset-0 lg:bg-gradient-to-r bg-gradient-to-b from-gray-900"></div>
+                    <div class="absolute inset-0  lg:bg-gradient-to-l bg-gradient-to-t from-gray-900"></div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:py-10 lg:py-16" id="teamid">
+            <div class="pt-7 px-4 sm:px-6 lg:flex md:pl-6 lg:pl-16 dark:text-white">
+                <div class="md:w-full lg:w-customizedwidth4">
+                    <h1 class="font-extrabold text-4xl">The Team</h1>
+                    <p class="mt-5 text-xl dark:text-gray-300 lg:pr-2">The team is very small, consisting of a single person. We can rely on a network of partners for larger engagements,
+                         allowing us to take on bigger projects is well.
+                    </p>
+                </div>
+                <div class=" sm:flex md:mt-12 lg:mt-0 mt-12 lg:w-full">
+                <div class="lg:flex lg:ml-5 lg:justify-start sm:pr-0 sm:w-customizewidth2 md:w-customizedwidth4 lg:w-customizedwidth4">
+                    <img src="images/Fredrik.jpg" alt="ferdrik" class="sm:w-customwidth sm:h-48 md:w-96 md:h-72 lg:w-64 lg:h-64">
+                </div>
+                <div class="mt-4 sm:mt-0 sm:text-left md:w-full sm:-ml-5 md:-ml-0 md:pl-6 lg:pl-5 md:text-left ">
+                    <p class="text-lg font-semibold">Fredik Mäkilä</p>
+                    <p class="text-lg font-semibold dark:text-red-400">Senior Software Engineer</p>
+                    <p class="mt-4 sm:mt-0 md:mt-2 lg:mt-3 text-lg md:pr-2 lg:pr-14 dark:text-gray-300 text-gray-700">I have a master degree in Computer Science Engineering and have experience working with government agencies and clients in 
+                        finance and insurance, from large institutions to startups.
+                    </p>
+                    <p class="mt-4 sm:mt-3 md:mt-1 lg:mt-3 text-lg lg:pr-14 dark:text-gray-300 text-gray-700">I have a strong foundation in Java and good understanding of system design to allow me to build performant APIs. I also have a solid grasp 
+                        of front-end technologies and ideally I work across the stack
+                    </p>
+                    <p class="mt-4 sm:mt-3 md:mt-1 lg:mt-3 text-lg lg:pr-14 dark:text-gray-300 text-gray-700">Agile is the name of the game and I have experience leading several teams as Scrum Master.</p>
+                    <div class="flex mt-3 items-center">
+                        <p><a href="https://github.com/githug" target="_blank" rel="noopener noreferrer"><i class="fab fa-github text-xl text-gray-600 dark:text-gray-400"></i></a></p>
+                        <p class="ml-6"><a href="https://www.linkedin.com/in/fredrikmakila/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin text-2xl text-gray-600 dark:text-gray-400"></i></a></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-28 px-4 sm:pt-24 sm:pb-12 md:pt-40 lg:pt-24 pb-20 lg:pb-20 sm:px-12 md:px-8 lg:px-72">
+            <div class="text-center">
+                <h1 class="dark:text-gray-300 text-2xl font-semibold text-gray-700"><q>Fredrik is a dedicated, innovative and impressive consultant with a unique ability to understand, 
+                    explain and work complex systems.</q></h1>
+                <p class="px-8 dark:text-gray-400 font-medium sm:px-12 mt-8 md:px-32 text-gray-600">Based upon the responses from 10 colleagues and customers responding anonymously in May 2017</p>
+            </div>
+        </section>
+        <section class="flex w-full md:hidden lg:hidden" id="contact2">
+            <div class="w-full flex justify-center">
+                <div class="w-full sm:w-container sm:mt-1 pb-8 lg:-mt-2 ml-0  rounded-lg bg-gray-100 dark:bg-gray-800">
+                <div class="w-full sm:w-container px-4 sm:px-10 pt-8">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-black dark:text-white">Let's work together</h1>
+                    <p class="mt-3 pr-0 sm:pr-12 text-lg text-gray-700 dark:text-gray-300">We'd love to hear from you! Send us a message and
+                        we'll get right back to you.
+                    </p>
+                    <div class="w-full h-16 border-red-300 flex items-center">
+                        <!-- <div class="w-full border-customizeborder border-gray-300"></div> -->
+                            <hr class="w-full">
+                            <div><i class="fas fa-envelope text-gray-300 dark:text-gray-300 px-3"></i></div>
+                            <hr class="w-full">
+                        <!-- <div class="w-full border border-gray-300"></div> -->
+                    </div>
+                    <div class="sm:flex justify-between">
+                        <div class="">
+                            <p class="text-sm font-medium text-gray-700 dark:text-gray-300">First name</p>
+                            <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full sm:w-inputwidth border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                        </div>
+                        <div class="mt-2 sm:mt-0">
+                            <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Last name</p>
+                            <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full sm:w-inputwidth border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                        </div>
+                    </div>
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-300">Email</p>
+                    <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-300">Company</p>
+                    <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Phone</p>
+                        <p class="text-sm font-normal text-gray-600 dark:text-gray-300">Optional</p>
+                    </div>
+                    <input type="text" class="mt-1 px-3 py-2 h-9 rounded w-full border border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none" >
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">How can we help you?</p>
+                        <p class="text-sm font-normal text-gray-600 dark:text-gray-300">Max. 2000 characters</p>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="mt-1 px-3 py-2 w-full h-24 border rounded border-gray-300 focus:ring-2  focus:ring-blue-600 focus:border-transparent focus:outline-none">
+                    </textarea>
+                    <div class="flex justify-end">
+                    <button class="mt-1 px-9 py-3 rounded-lg bg-red-700 text-white text-sm font-medium focus:outline-none">Submit</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </article>
+    <footer class="bg-gray-100 dark:bg-gray-700 py-16">
+        <div class="text-center">
+            <div class="flex justify-center items-center text-gray-700 dark:text-gray-300">
+                <div class=" flex w-96 justify-between">
+                <p class="capitalize">company</p>
+                <p class="capitalize">team</p>
+                <p class="capitalize">contact</p>
+                <p class="capitalize">engineering blog</p>
+            </div>
+            </div>
+            <div class="my-7 flex justify-center items-center">
+                <div class=" w-20 flex justify-between">
+                <p class=""><a href="https://www.linkedin.com/in/fredrikmakila/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin ml-1 text-2xl text-gray-400 dark:text-gray-400"></i></a></p>
+                <p><a href="https://github.com/githug" target="_blank" rel="noopener noreferrer"><i class="fab fa-github text-xl mr-2 text-gray-400 dark:text-gray-400"></i></a></p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="dark:text-gray-300 text-gray-700">Coded by <a href="https://github.com/zuzimajo1" target="_blank" rel="noopener noreferrer" class="text-black dark:text-gray-900">Zuzim Ajo</a> &copy; 2021 Takanoha Ab</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
